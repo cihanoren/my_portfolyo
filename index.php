@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo</title>
+    <link rel="stylesheet" href="index_page.css">
+</head>
+<body>
+<header id="main-header">
+    <nav>
+        <ul>
+            <li><a href="index.php">Ana Sayfa</a></li>
+            <li><a href="projects.php">Projelerim</a></li>
+            <li><a href="contact.php">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1 class="fade-in">Merhaba, Ben <span class="highlight">Cihan Ören</span></h1>
+        <p class="slide-up">Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Mobil uygulama geliştirme konusunda uzmanlaşıyorum ve yeni teknolojilere büyük ilgi duyuyorum. Yazılımın gücünü keşfetmek ve projeler geliştirmek benim en büyük tutkum!</p>
+        <a href="projects.php" class="btn">Projelerim</a>
+    </div>
+</div>
+
+<script>
+    window.addEventListener("scroll", function() {
+        let scrollValue = window.scrollY;
+        let header = document.getElementById("main-header");
+        let title = document.querySelector("h1");
+        let paragraph = document.querySelector("p");
+
+        let newSize = Math.max(1.5, 3 - (scrollValue / 300));
+        title.style.fontSize = newSize + "rem";
+        paragraph.style.fontSize = Math.max(1, newSize - 1) + "rem";
+
+        if (scrollValue > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+</script>
+</body>
+</html>
