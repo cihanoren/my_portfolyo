@@ -67,48 +67,63 @@ nav ul li a:hover {
     background: #1e1e1e;
     border-radius: 10px;
     overflow: hidden;
-    transition: width 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #FFD700;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5);
 }
 
 .project-card.expanded {
     width: 600px;
     flex-basis: 100%;
     transform: scale(1.02);
-    transition: width 0.8s ease-in-out, transform 0.8s ease-in-out;
+    background-color: #000000 !important;
+    box-shadow: 0px 6px 20px rgba(64, 224, 208, 0.8); /* Turkuaz gölge */
+    border: 1px solid #40E0D0; /* Kenarlık turkuaz */
 }
 
-.project-img1 {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    border-radius: 10px;
-    transition: transform 0.8s ease-in-out;
+.project-card.expanded .project-title {
+    color: #40E0D0; /* Başlık turkuaz */
 }
 
-.project-info {
-    padding: 20px;
-    text-align: left;
-    width: 100%;
-    box-sizing: border-box;
+.project-card.expanded .project-details {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #000000 !important;
 }
 
-.project-title {
+.project-card.expanded .project-details p,
+.project-card.expanded .project-details ul li {
+    color: #40E0D0; /* Metinler turkuaz */
+}
+
+.project-card.expanded .more-btn {
+    background: linear-gradient(45deg, #40E0D0, #20B2AA);
+    color: black;
+}
+
+.project-card.expanded .more-btn:hover {
+    background: linear-gradient(45deg, #20B2AA, #008B8B);
+}
+
+.project-card.expanded .detail-img {
+    box-shadow: 0px 4px 10px rgba(64, 224, 208, 0.5);
+}
+
+.project-card .project-title {
     font-size: 1.6rem;
     color: #FFD700;
     margin-bottom: 10px;
 }
 
-.project-description {
-    font-size: 1rem;
+.project-card .project-details p,
+.project-card .project-details ul li {
     color: white;
-    line-height: 1.6;
-    word-wrap: break-word;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .more-btn {
@@ -127,6 +142,28 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+.project-card:not(.expanded) {
+    border: 1px solid #FFD700; /* Kart kapanınca altın kenarlık */
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5); /* Altın gölge */
+}
+
+.project-card:not(.expanded) .project-title {
+    color: #FFD700;
+}
+
+.project-card:not(.expanded) .project-details p,
+.project-card:not(.expanded) .project-details ul li {
+    color: white;
+}
+
+.project-card:not(.expanded) .more-btn {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+}
+
+.project-card:not(.expanded) .detail-img {
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+}
+
 .project-details {
     display: none;
     position: relative;
@@ -134,36 +171,12 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.9);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5);
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-.project-card.expanded .project-details {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.close-btn:hover {
-    background: #cc0000;
-}
 
 .detail-images {
     display: flex;
@@ -184,22 +197,18 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-.project-card .project-details p {
-    font-size: 1rem;
-    color: white;
-    line-height: 1.6;
+#more {
+    display: none;
 }
 
-.project-card .project-details ul {
-    color: white;
-    list-style: none;
-    padding-left: 20px;
+.hidden {
+    display: none;
 }
 
-.project-card .project-details ul li {
-    margin: 10px 0;
-}
-
-.project-card .project-details .features {
-    font-weight: bold;
+.project-img1 {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: tranform 0.8s ease-in-out;
 }
