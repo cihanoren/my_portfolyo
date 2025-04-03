@@ -1,0 +1,198 @@
+/* Genel stiller */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+
+/* İletişim Sayfası Stilleri */
+.contact-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5);
+    text-align: center;
+}
+
+.contact-container h1 {
+    color: #FFD700;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s forwards;
+}
+
+.contact-container p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.contact-form .input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    background: #1e1e1e;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0px 2px 5px rgba(255, 215, 0, 0.2);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #40E0D0;
+    box-shadow: inset 0px 2px 5px rgba(64, 224, 208, 0.5);
+    outline: none;
+}
+
+.contact-form button {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(45deg, #FFA500, #FF4500);
+    transform: scale(1.1);
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes tickIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes textIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mesaj başarıyla gönderildi */
+.message-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: #046118;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.5);
+    margin-top: 20px;
+    animation: fadeIn 2s forwards;
+}
+
+.message-success.hide {
+    animation: fadeOut 2s forwards;
+}
+
+.message-success .tick-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #26f4e9;
+    animation: tickIn 2s forwards 0.5s;
+}
+
+.message-success p {
+    font-size: 1.5rem;
+    margin: 0;
+    animation: textIn 2s forwards 1s;
+}
+
+/* Sticky Header */
+header.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+

@@ -89,8 +89,9 @@ nav ul li a:hover {
 }
 
 .project-card.expanded {
-    width: 600px;
-    flex-basis: 100%;
+    width: 80%;  /* %70 yerine %80 yaparak daha geniş olmasını sağlıyoruz */
+    max-width: 1100px; /* Maksimum genişliği artırıyoruz */
+    flex-basis: auto;
     transform: scale(1.02);
     background-color: #000000 !important;
     box-shadow: 0px 6px 20px rgba(64, 224, 208, 0.8); /* Turkuaz gölge */
@@ -232,5 +233,12 @@ nav ul li a:hover {
     to {
         opacity: 1;
         transform: translateY(0);  /* Başlangıçtaki pozisyona gelir */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card.expanded {
+        width: 90%;  /* Küçük ekranlarda genişlik daha fazla olabilir */
+        max-width: 100%;
     }
 }

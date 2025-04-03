@@ -1,0 +1,15 @@
+{
+  "name": "cihan/tale_maker",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Cihan",
+      "email": "cihanoren10@gmail.com"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "^6.9"
+  }
+}

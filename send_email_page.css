@@ -1,0 +1,58 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+/* Başarı mesajı kutusu */
+.message-success {
+    text-align: center;
+    background-color: #e0f7e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    opacity: 0 !important; /* Başlangıçta görünmesin */
+    animation: fadeIn 2s forwards !important;
+}
+
+/* Yeşil tik ikonu */
+.tick-icon {
+    font-size: 50px;
+    color: #4caf50; /* Yeşil renk */
+    margin-bottom: 10px;
+    opacity: 0 !important; /* Başlangıçta görünmesin */
+    animation: tickIn 2s forwards 0.5s !important;
+}
+
+/* Mesaj metni */
+.message-success p {
+    font-size: 18px;
+    color: #4caf50;
+    margin: 0;
+    opacity: 0 !important; /* Başlangıçta görünmesin */
+    animation: textIn 2s forwards 1s !important;
+}
+
+/* Fade-in animasyonu */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Tik işareti animasyonu */
+@keyframes tickIn {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Mesaj metni animasyonu */
+@keyframes textIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
