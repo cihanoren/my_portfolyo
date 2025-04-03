@@ -31,6 +31,10 @@ nav ul {
     gap: 30px;
 }
 
+nav ul li{
+    display: inline;
+}
+
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -193,6 +197,57 @@ nav ul li a:hover {
 header.scrolled {
     background: rgba(0, 0, 0, 0.9);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Sosyal medya bölümü */
+.social-media {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-media p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sosyal medya ikonlarını yatay hizala */
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* İkonlar arası mesafe */
+    flex-direction: row; /* Yatay hizalama */
+}
+
+/* Liste elemanlarını yan yana hizala */
+.social-media ul li {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* İkon ile yazı arasındaki mesafe */
+}
+
+/* Sosyal medya bağlantılarının alt çizgisini kaldır */
+.social-media .social-icon {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    display: flex;
+    align-items: center;
+}
+
+/* Hover efekti ile renk değişimi */
+.social-media .social-icon:hover {
+    color: #007bff;
+}
+
+/* İkonun yazı ile arasındaki mesafeyi ayarla */
+.social-media .social-icon i {
+    margin-right: 8px;
+}
+
+svg{
+    margin-right: 8px;
 }
 
 
