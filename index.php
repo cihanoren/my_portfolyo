@@ -11,7 +11,7 @@
     <nav>
         <ul>
             <li><a href="index.php">Ana Sayfa</a></li>
-            <li><a href="projects.php">Projelerim</a></li>
+            <li><a href="projects.php">Projeler</a></li>
             <li><a href="contact.php">İletişim</a></li>
         </ul>
     </nav>
@@ -21,7 +21,7 @@
     <div class="hero-content">
         <h1 class="fade-in">Merhaba, Ben <span class="highlight">Cihan Ören</span></h1>
         <p class="slide-up">Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Mobil uygulama geliştirme konusunda uzmanlaşıyorum ve yeni teknolojilere büyük ilgi duyuyorum. Yazılımın gücünü keşfetmek ve projeler geliştirmek benim en büyük tutkum!</p>
-        <a href="projects.php" class="btn">Projelerim</a>
+        <a href="projects.php" class="btn">Projeler</a>
     </div>
 </div>
 

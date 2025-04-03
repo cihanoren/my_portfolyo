@@ -12,41 +12,29 @@
     <nav>
         <ul>
             <li><a href="index.php">Ana Sayfa</a></li>
-            <li><a href="projects.php">Projelerim</a></li>
+            <li><a href="projects.php">Projeler</a></li>
             <li><a href="contact.php">İletişim</a></li>
         </ul>
     </nav>
 </header>
 
 <section id="projects">
-    <h2 class="section-title">Projelerim</h2>
+    <h2 class="section-title">Projeler</h2>
     <div class="projects-container">
 
         <!-- Tale Maker Projesi -->
-        <div class="project-card" id="tale_maker">
-            <img src="play_store.png" alt="Tale Maker" class="project-img1">
-            <div class="project-info">
-                <h3 class="project-title">Tale Maker</h3>
-                <p>
-                    Tale Maker, Flutter ile geliştirilen yapay zeka destekli bir masal oluşturma uygulamasıdır.
-                    Kullanıcı, kendi hayal gücünü kullanarak masalın karakterlerini ve olayların geçeceği mekanları belirleyebilir.
-                    <span id="dots-tale_maker">...</span>
-                    <span id="more-tale_maker" style="display: none;">
-                    Ardından yapay zeka, bu öğeleri kullanarak tamamen kişiselleştirilmiş bir masal oluşturur.
-                    Tale Maker yalnızca masal oluşturmakla kalmaz! Uygulama, çocukların hem eğlenmesini hem de
-                    düşünme becerilerini geliştirmesini sağlayan bilmeceler, adam asmaca, ülke tahmini ve
-                    mayın tarlası gibi eğlenceli oyunları da içerir.
-                    Tale Maker’ı keşfederek hayal dünyanızı genişletebilirsiniz!
-                </span>
-                </p>
+        <?php
+        include 'tale_maker.php';
+        ?>
 
-                <button class="btn more-btn" onclick="toggleReadMore('tale_maker')" id="readmore_btn-tale_maker">Daha Fazla</button>
+        <!-- Bitki Bilgi Sistemi Projesi -->
+        <?php
+        include 'bitki_bilgi.php';
+        ?>
 
-                <div class="project-details hidden">
-                    <img src="tale_maker_2.png" class="detail-img">
-                </div>
-            </div>
-        </div>
+        <?php
+        include 'teknofest.php';
+        ?>
 
     </div>
 
@@ -109,6 +97,21 @@
 
 </section>
 
-<!-- 🟢 DİKKAT! JavaScript dosyanı `</body>` öncesine ekle -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+            document.getElementById('projects').classList.add('visible');
+
+            document.querySelectorAll('.project-card').forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, index * 200); // Her kartı 200ms gecikmeli aç
+            });
+
+        }, 300);
+    });
+
+
+</script>
 </body>
 </html>
