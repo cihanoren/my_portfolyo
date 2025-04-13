@@ -93,8 +93,6 @@ $success = isset($_GET['success']) && $_GET['success'] == 'true';
 </script>
 
 <script>
-    document.querySelector(".contact-form").addEventListener("submit", function(e) {
-        e.preventDefault();  // Formun normal gönderimini engeller
 
         const form = document.getElementById('contactForm');
         const successMessage = document.getElementById('successMessage');
