@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim</title>
+    <link rel="stylesheet" href="projects_page.css">
+</head>
+<body>
+
+<header id="main-header">
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="projects.html">Projeler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="projects">
+    <h2 class="section-title">Projeler</h2>
+    <div class="projects-container">
+
+
+        <!-- Tale Maker Projesi -->
+        <div class="project-card" id="tale_maker">
+    <img src="assets/play_store.png" alt="Tale Maker" class="project-img1">
+    <div class="project-info">
+        <h3 class="project-title">Tale Maker</h3>
+        <p>
+            Tale Maker, Flutter ile geliştirilen yapay zeka destekli bir masal oluşturma uygulamasıdır.
+            Kullanıcı, kendi hayal gücünü kullanarak masalın karakterlerini ve olayların geçeceği mekanları belirleyebilir.
+            <span id="dots-tale_maker">...</span>
+        </p>
+        <div id="more-tale_maker" style="display: none;">
+            <p>Ardından yapay zeka, bu öğeleri kullanarak tamamen kişiselleştirilmiş bir masal oluşturur.
+                Tale Maker yalnızca masal oluşturmakla kalmaz! Uygulama, çocukların hem eğlenmesini hem de
+                düşünme becerilerini geliştirmesini sağlayan bilmeceler, adam asmaca, ülke tahmini ve
+                mayın tarlası gibi eğlenceli oyunları da içerir.
+                Tale Maker’ı keşfederek hayal dünyanızı genişletebilirsiniz!</p>
+
+            <h2>Özellikler</h2>
+            <ul>
+                <h3>1. Masal Oluşturma</h3>
+                <p>Hayal gücünüzü konuşturun! Seçtiğiniz kelimelerle yapay zekanın eşsiz masallar oluşturmasını sağlayın. Çocuklar için uyku öncesi hikayeler veya yaratıcı bir proje için harika bir araç!</p>
+
+                <h3>2. Bilmece Oluşturma ve Çözme</h3>
+                <p>Eğlenceli bilmeceler oluşturun veya mevcut bilmecelerle zihninizi zorlayın. Cevapları görmek için kendinizi test edin ve arkadaşlarınızla eğlenceli yarışmalara katılın.</p>
+
+                <h3>3. Eğlenceli Oyunlar</h3>
+                <li><strong>Bayrak Tahmin Oyunu:</strong> Rastgele bayraklarla ülkeyi tahmin edin! Yanlış tahminler ipucu açar ve o ülke hakkında ilginç bilgiler edinmenizi sağlar.</li>
+                <li><strong>Mayın Tarlası:</strong> Strateji ve dikkat gerektiren klasik bir oyun. Tüm mayınları açmadan temizlemeye çalışın!</li>
+                <li><strong>Adam Asmaca:</strong> Kelime tahmini yaparak eğlenin. Hem çocuklar hem de yetişkinler için mükemmel bir oyun.</li>
+            </ul>
+        </div>
+
+
+        <div class="project-details hidden">
+            <img src="assets/Screenshot_1733071273.png" class="detail-img">
+            <img src="assets/Screenshot_1733071287.png" class="detail-img">
+            <img src="assets/Screenshot_1733071331.png" class="detail-img">
+            <img src="assets/Screenshot_1733071369.png" class="detail-img">
+            <img src="assets/Screenshot_1733071379.png" class="detail-img">
+            <img src="assets/Screenshot_1733071562.png" class="detail-img">
+            <img src="assets/Screenshot_1733071678.png" class="detail-img">
+            <img src="assets/Screenshot_1733071751.png" class="detail-img">
+        </div>
+
+        <button class="btn more-btn" onclick="toggleReadMore('tale_maker')" id="readmore_btn-tale_maker">Daha Fazla</button>
+        <button class="btn more-btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.tale_maker', '_blank');">Uygulamaya Git</button>
+
+    </div>
+</div>
+
+
+        <!-- Bitki Bilgi Sistemi Projesi -->
+        <div class="project-card" id="bitki_bilgi">
+    <img src="assets/bitki_resim_2.png" alt="Bitki Bilgi" class="project-img1">
+    <div class="project-info">
+        <h3 class="project-title">Bitki Bilgi Sistemi</h3>
+        <p>
+            Bitki Bilgi Sistemi, Flutter ile geliştirilen akıllı bir bitki bakım takip uygulamasıdır.
+            Kullanıcılar, bitkilerinin sulama geçmişini kaydederek bir sonraki sulama zamanını
+            otomatik olarak hatırlatabilen bir sistemle bitkilerini sağlıklı tutabilir.
+            <span id="dots-bitki_bilgi">...</span>
+        </p>
+        <div id="more-bitki_bilgi" style="display: none;">
+            <p>
+                Uygulama, kullanıcılardan bitki ismi, son sulama tarihi ve en son verilen su miktarı
+                gibi bilgileri alarak, bitkinin türüne ve ihtiyaçlarına göre ideal sulama aralıklarını hesaplar.
+                Gerçek zamanlı bildirimlerle kullanıcıları bilgilendirerek, bitkilerin aşırı veya yetersiz
+                sulanmasını önlemeye yardımcı olur.
+                <br><br>
+                Flutter’ın güçlü UI yetenekleri sayesinde modern ve sezgisel bir arayüz sunan uygulama,
+                Firebase ile entegre edilerek kullanıcı verilerinin güvenli bir şekilde saklanmasını sağlar.
+                Akıllı algoritmalar sayesinde kişiselleştirilmiş bakım önerileri sunarak, bitki yetiştirme
+                sürecini hem kolaylaştırır hem de daha bilinçli hale getirir.
+                Bitkilerinizin bakımını aksatmadan, sağlıklı ve mutlu büyümelerini sağlamak artık çok daha kolay!
+                Geliştirmeye devam ediyoruz. Çok yakında Google Play Store'da sizlerle.
+            </p>
+        </div>
+
+        <div class="project-details hidden">
+            <img src="assets/bbs1.png" class="detail-img">
+            <img src="assets/bbs2.png" class="detail-img">
+            <img src="assets/bbs3.png" class="detail-img">
+            <img src="assets/bbs5.png" class="detail-img">
+        </div>
+
+        <button class="btn more-btn" onclick="toggleReadMore('bitki_bilgi')" id="readmore_btn-bitki_bilgi">Daha Fazla</button>
+    </div>
+
+</div>
+
+
+        <!-- Teknofest Kaya Düşme Projesi -->   
+        <div class="project-card" id="kaya_dusme">
+    <img src="assets/kaya_dusme.png" alt="Kaya Düşme Projesi" class="project-img1">
+    <div class="project-info">
+        <h3 class="project-title">Teknofest Kaya Düşme Projesi</h3>
+        <p>
+            Cyber Soldiers ekibi olarak geliştirdiğimiz bu proje, Artvin'in Seyitler Köyü yolunda sıkça meydana gelen kaya düşmelerine karşı
+            teknolojik bir çözüm sunmayı amaçlamaktadır. Seyitler Köyü yolu, Artvin Çoruh Üniversitesi'nin Seyitler kampüsüne erişim sağlayan
+            yüzlerce öğrenci ve personelin yanı sıra köy halkı tarafından da yoğun olarak kullanılmaktadır.
+            <span id="dots-kaya_dusme">...</span>
+        </p>
+        <div id="more-kaya_dusme" style="display: none;">
+            <p>
+                Özellikle mevsim geçişleri ve yağışlı havalarda yaşanan kaya düşmeleri, can ve mal kayıpları açısından büyük bir risk oluşturmaktadır.
+                Proje kapsamında, yol güvenliğini artırarak olası kazaları önlemek ve kullanıcıların güvenliğini sağlamak hedeflenmektedir.
+                <br><br>
+                Bu doğrultuda, ekip tarafından geliştirilen otonom uçuş yapabilen özel bir drone (uçan göz) ile düşme riski taşıyan
+                kayaların görüntüleri kaydedilecek ve analiz için sunucuya aktarılacaktır. Sunucuda işlenen bu veriler, uzmanlara iletilerek
+                kritik bölgelerde önceden önlem alınmasını sağlayacaktır.
+                <br><br>
+                Bunun yanı sıra, kaya düşmeleri sırasında yol üzerindeki sürücü ve yayaları anında uyarmak için,
+                dağ yamaçlarına yerleştirilecek titreşim sensörleri kullanılacaktır. Bu sensörler, algıladıkları hareketlere bağlı olarak
+                uyarı lambalarını aktive edecek ve erken uyarı mekanizması oluşturacaktır.
+                <br><br>
+                Proje kapsamında geliştirilecek sistem iki ana bileşenden oluşacaktır:
+                <strong>Uçan Göz Devriye Sistemi</strong> ve <strong>Erken Uyarı Sistemi</strong>.
+                Otonom olarak önceden belirlenen kalkış noktasından havalanan drone, düşme riski taşıyan bölgeleri
+                tarayarak üzerindeki Raspberry Pi bilgisayarına bağlı kamera ile görüntü toplayacaktır.
+                Toplanan veriler, drone'un iniş yaptığı noktadaki sunucuya SSH protokolü üzerinden kablosuz olarak aktarılacaktır.
+                Sunucuda çalışan web tabanlı yazılım sayesinde, uzmanlar bu görüntüleri inceleyerek risk taşıyan kayaları tespit edebilecektir.
+                <br><br>
+                Uçan gözün tasarımında Pixhawk uçuş kontrol kartı, güçlü motorlar, güç dağıtım kartları ve karbon fiber gövde kullanılacaktır.
+                Bu yenilikçi sistem, Artvin'in Seyitler Köyü yolunda yaşanan kaya düşme sorununa etkin bir çözüm sunarak, can ve mal kayıplarını
+                en aza indirmeyi amaçlamaktadır.
+            </p>
+        </div>
+
+        <div class="project-details hidden">
+            <img src="assets/kaya_dusme.png" class="detail-img">
+            <img src="assets/kaya_dusme_2.png" class="detail-img">
+            <img src="assets/genel_sema.png" class="detail-img">
+            <img src="assets/sunucu.png" class="detail-img">
+            <img src="assets/teknofest_drone.jpg" class="detail-img">
+            <img src="assets/tenofest_mac.jpg" class="detail-img">
+            <img src="assets/teknofest_masa.jpg" class="detail-img">
+            <img src="assets/teknofest_toplu.jpg" class="detail-img">
+        </div>
+
+        <button class="btn more-btn" onclick="toggleReadMore('kaya_dusme')" id="readmore_btn-kaya_dusme">Daha Fazla</button>
+    </div>
+
+</div>
+
+    </div>
+
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.project-card').forEach(card => {
+                const details = card.querySelector('.project-details');
+                if (details) {
+                    details.classList.add('hidden');
+                }
+                card.classList.remove('expanded');
+            });
+        });
+
+        // toggleReadMore fonksiyonunu global hale getir
+        window.toggleReadMore = function(projectId) {
+            var projectCard = document.getElementById(projectId);
+            if (!projectCard) return; // Eğer proje kartı bulunamazsa fonksiyondan çık
+
+            var details = projectCard.querySelector('.project-details');
+            var dots = projectCard.querySelector("#dots-" + projectId);
+            var moreText = projectCard.querySelector("#more-" + projectId);
+            var btnText = projectCard.querySelector("#readmore_btn-" + projectId);
+
+            // Önceden açılmış olanları kapat
+            document.querySelectorAll('.project-card').forEach(card => {
+                if (card !== projectCard) {
+                    const otherDetails = card.querySelector('.project-details');
+                    if (otherDetails) otherDetails.classList.add('hidden');
+                    card.classList.remove('expanded');
+
+                    const otherBtn = card.querySelector('.more-btn');
+                    if (otherBtn) otherBtn.innerHTML = "Daha Fazla";
+
+                    const otherDots = card.querySelector('[id^="dots-"]');
+                    const otherMoreText = card.querySelector('[id^="more-"]');
+                    const otherReadMoreBtn = card.querySelector('[id^="readmore_btn-"]');
+
+                    if (otherDots) otherDots.style.display = "inline";
+                    if (otherMoreText) otherMoreText.style.display = "none";
+                    if (otherReadMoreBtn) otherReadMoreBtn.innerHTML = "Daha Fazla";
+                }
+            });
+
+            // Eğer detaylar açıksa kapat, kapalıysa aç
+            if (details && details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+                projectCard.classList.add('expanded');
+                if (btnText) btnText.innerHTML = "Daha Az";
+                if (moreText) moreText.style.display = "inline";
+                if (dots) dots.style.display = "none";
+            } else {
+                if (details) details.classList.add('hidden');
+                projectCard.classList.remove('expanded');
+                if (btnText) btnText.innerHTML = "Daha Fazla";
+                if (moreText) moreText.style.display = "none";
+                if (dots) dots.style.display = "inline";
+            }
+        };
+    </script>
+
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+            document.getElementById('projects').classList.add('visible');
+
+            document.querySelectorAll('.project-card').forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, index * 200); // Her kartı 200ms gecikmeli aç
+            });
+
+        }, 300);
+    });
+
+
+</script>
+</body>
+</html>

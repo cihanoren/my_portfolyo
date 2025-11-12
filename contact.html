@@ -1,7 +1,3 @@
-<?php
-// success parametresini kontrol et
-$success = isset($_GET['success']) && $_GET['success'] == 'true';
-?>
 
 <!DOCTYPE html>
 <html lang="tr">
@@ -17,9 +13,9 @@ $success = isset($_GET['success']) && $_GET['success'] == 'true';
 <header>
     <nav>
         <ul>
-            <li><a href="index.php">Ana Sayfa</a></li>
-            <li><a href="projects.php">Projeler</a></li>
-            <li><a href="contact.php">İletişim</a></li>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="projects.html">Projeler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
         </ul>
     </nav>
 </header>
@@ -33,7 +29,7 @@ $success = isset($_GET['success']) && $_GET['success'] == 'true';
             projelere imza atmak için de bizlere ulaşabilirsiniz. Aşağıdaki formu doldurarak bize mesajınızı
             iletebilirsiniz. En kısa sürede size dönüş yapacağız!</p>
 
-        <form action="send_email.php" method="POST" class="contact-form" id="contactForm">
+        <form action="send_email.html" method="POST" class="contact-form" id="contactForm">
             <div class="input-group">
                 <input type="text" name="name" placeholder="Adınız" required>
             </div>
@@ -116,7 +112,7 @@ $success = isset($_GET['success']) && $_GET['success'] == 'true';
                 successMessage.classList.remove("hide-message");  // Animasyonu temizle
             }, 2000); // Animasyon süresi (fadeOut)
         }, 5000); // 5000ms = 5 saniye
-    });
+    
 </script>
 
 </body>

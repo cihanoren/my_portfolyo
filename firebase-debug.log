@@ -1,0 +1,39 @@
+[debug] [2025-11-12T22:03:16.830Z] ----------------------------------------------------------------------
+[debug] [2025-11-12T22:03:16.831Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2025-11-12T22:03:16.831Z] CLI Version:   14.24.2
+[debug] [2025-11-12T22:03:16.832Z] Platform:      darwin
+[debug] [2025-11-12T22:03:16.832Z] Node Version:  v24.11.1
+[debug] [2025-11-12T22:03:16.832Z] Time:          Thu Nov 13 2025 01:03:16 GMT+0300 (GMT+03:00)
+[debug] [2025-11-12T22:03:16.832Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/cihanoren/Documents/Github/my_portfolyo
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-11-12T22:03:21.474Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-12T22:03:21.474Z] > authorizing via signed-in user (orencihan31@gmail.com)
+[debug] [2025-11-12T22:03:21.475Z] Checked if tokens are valid: true, expires at: 1762987370468
+[debug] [2025-11-12T22:03:21.476Z] Checked if tokens are valid: true, expires at: 1762987370468
+[debug] [2025-11-12T22:03:21.477Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cihanoren-com [none]
+[debug] [2025-11-12T22:03:22.200Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cihanoren-com 403
+[debug] [2025-11-12T22:03:22.200Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cihanoren-com {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-11-12T22:03:22.201Z] Request to https://firebase.googleapis.com/v1beta1/projects/cihanoren-com had HTTP Error: 403, The caller does not have permission
+[debug] [2025-11-12T22:03:22.202Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/cihanoren-com had HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:53:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:322:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[error] 
+[error] Error: Failed to get Firebase project cihanoren-com. Please make sure the project exists and your account has permission to access it.
